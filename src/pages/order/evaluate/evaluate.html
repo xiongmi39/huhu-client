@@ -1,0 +1,50 @@
+<!--
+  Generated template for the Evaluate page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>评价</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-card >
+	<ion-list>
+		<ion-item >
+			<ion-thumbnail item-start >
+				<img src="assets/icon/2017-05-13 212002.jpg">
+				
+			</ion-thumbnail>
+			<h2>输液服务</h2><span item-end class="price">200元</span>
+			
+			<p>今天15:00完成服务</p>
+		</ion-item>
+		<ion-item>
+		<p item-start>静静</p>
+			<p style="text-align: center;">为服务打分</p>
+						<rating [(ngModel)]="rate" 
+			readOnly="false" 
+			max="5"
+			emptyStarIconName="star-outline" 
+			halfStarIconName="star-half" 
+			starIconName="star"
+			nullable="false" 
+			(ngModelChange)="onModelChange($event)"> 
+		</rating>
+		</ion-item>
+		<ion-item>
+		<ion-textarea placeholder="请写下您对本次服务的评价吧~" style="height: 200px;border: 1px solid #999;margin-bottom: 20px"></ion-textarea>
+		</ion-item>
+	</ion-list>
+</ion-card>
+</ion-content>
+
+<ion-footer>
+<button ion-button full >提交</button>
+</ion-footer>

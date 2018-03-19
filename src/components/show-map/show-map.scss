@@ -1,0 +1,23 @@
+show-map {
+		baidu-map{
+		width: 100%;
+		height: 85%;
+		display: block;
+		margin: auto;
+	}
+
+	.mapPanel{
+		background: rgba(153,153,153,0.5);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top:100px;
+		left: 0;
+	}
+	button {
+		width: 100px !important;
+		margin: 20px auto !important;
+		display: block !important;
+		text-align: center;
+	}
+}

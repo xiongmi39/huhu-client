@@ -1,0 +1,68 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			我的
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-item  no-lines>
+		<ion-thumbnail item-left >
+			<img src="assets/icon/2017-05-13 212002.jpg">
+		</ion-thumbnail>
+		<h2 >喵喵</h2>
+		<p>超级会员</p>
+		<p >积分：<span>12</span> </p>
+	</ion-item>
+	<ion-list>
+		<ion-item>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-4 (click)="goUserFile()">
+						<div style="height:40px;position: relative;">
+							<img src="assets/icon/72.png" style="width: 35px;margin: auto;position: absolute; 
+							top: 0; bottom: 0;left: 0;right: 0">
+						</div>
+						<div style="text-align: center;">就诊人档案</div>
+					</ion-col>
+					<ion-col col-4 (click)="goMyFollows()">
+						<div style="height:40px;position: relative;">
+							<img src="assets/icon/72.png" style="width: 35px;margin: auto;position: absolute; 
+							top: 0; bottom: 0;left: 0;right: 0">
+						</div>
+						<div style="text-align: center;">我的关注</div>
+					</ion-col>
+					<ion-col col-4 (click)="goCoupon()">
+						<div style="height:40px;position: relative;">
+							<img src="assets/icon/72.png" style="width: 35px;margin: auto;position: absolute; 
+							top: 0; bottom: 0;left: 0;right: 0">
+						</div>
+						<div style="text-align: center;">优惠</div>
+					</ion-col>            
+				</ion-row>
+			</ion-grid>
+		</ion-item>
+		
+		
+	</ion-list>
+	<ion-list>
+		<button ion-item (click)="goPurse()">
+			<ion-icon name="bookmark" item-left color="gray" ></ion-icon>
+			钱包
+		</button>	
+		<button ion-item >
+			<ion-icon name="create" item-left color="gray"></ion-icon>
+			发票
+		</button>
+		<button ion-item >
+			<ion-icon name="bookmark" item-left color="gray" ></ion-icon>
+			我的陪诊卡
+		</button>
+		<button ion-item (click)="goSetup()">
+			<ion-icon name="time" item-left color="gray"></ion-icon>
+			设置
+		</button>
+
+	</ion-list>	
+</ion-content>

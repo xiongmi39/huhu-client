@@ -1,0 +1,219 @@
+// http://ionicframework.com/docs/v2/theming/
+
+ion-content {
+	background : color($colors, panel) !important;
+}
+a {
+	color: #000;
+}
+.multiline-item{
+	white-space: normal;
+}
+
+ion-card{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	width: 100% !important;
+}
+
+ion-navbar .toolbar-background{
+	background : color($colors, primary) !important;
+	
+}
+ion-navbar .toolbar-title{
+	color: #fff !important;
+}
+
+	.price{
+		color: #9d9ee9 !important;
+		font-size: 15px !important;
+	}
+.back-button{
+	color: #fff !important;
+}
+
+	ion-thumbnail{
+		width: 56px !important;
+		height: 56px !important;
+	}
+
+	ion-thumbnail img{
+		width: 56px !important;
+		height: 56px !important;
+	}
+	.item-md ion-thumbnail {
+		min-width: 56px;
+		min-height: 56px;
+	}
+  .tabs-md .tab-button {
+    color: #dadaef ;
+  }
+
+
+
+
+
+
+
+
+
+
+
+//
+.ion-ios-HomePage{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/home_dark.png') center ;
+  background-size: 25px 25px;
+}
+
+.ion-ios-HomePage-outline{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/home.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-md-HomePage:before{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/home_dark.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-md-HomePage-outline:before{
+	content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/home.png') center;
+  background-size: 25px 25px;
+}
+//
+.ion-ios-AboutPage{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/knowledge_dark.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-ios-AboutPage-outline{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/knowledge.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-md-AboutPage:before{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/knowledge_dark.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-md-AboutPage-outline:before{
+	content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/knowledge.png') center;
+  background-size: 25px 25px;
+}
+//
+.ion-ios-KnowledgePage{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/list_dark.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-ios-KnowledgePage-outline{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/list.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-md-KnowledgePage:before{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/list_dark.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-md-KnowledgePage-outline:before{
+	content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/list.png') center;
+  background-size: 25px 25px;
+}
+//
+.ion-ios-Order{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/me_dark.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-ios-Order-outline{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/me.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-md-Order:before{
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/me_dark.png') center;
+  background-size: 25px 25px;
+}
+
+.ion-md-Order-outline:before{
+	content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: no-repeat url('../assets/icon/me.png') center;
+  background-size: 25px 25px;
+}	
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.

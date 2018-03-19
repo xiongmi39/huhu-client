@@ -1,0 +1,296 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>护护</ion-title>
+
+    <ion-buttons end >
+      <!-- <button ion-button icon-only (click)="showMapPanel()" style="color:#fff"> -->
+      <button ion-button icon-only  style="color:#fff" (click)="showLocate()">
+        <ion-icon name="navigate" style="font-size: 20px"  ></ion-icon>
+        <span style="color:#fff">{{location}}</span>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-slides pager autoplay=1 loop="true" speed=2000>
+
+    <ion-slide>
+      <img src="assets/icon/banner.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/icon/banner.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/icon/banner.png">
+    </ion-slide>
+
+  </ion-slides>
+<!--   <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item (click)="goCompany()">
+          <ion-thumbnail item-start>
+            <img src="assets/icon/打针.png">
+          </ion-thumbnail>
+          <h2>陪诊</h2>
+          <p>整个就诊过程给你像家人一样的陪伴和照顾</p>
+          <span item-end >￥399-￥2399</span>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card> -->
+<!--   <ion-list>
+    <ion-item (click)="goNurse()">
+      <ion-thumbnail item-start>
+        <img src="assets/icon/输液.png">
+      </ion-thumbnail>
+      <h2>打针</h2>
+      <p>肌肉注射，皮下注射</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item (click)="goCompany()">
+      <ion-thumbnail item-start>
+        <img src="assets/icon/打针.png">
+      </ion-thumbnail>
+      <h2>陪诊</h2>
+      <p>整个就诊过程给你像家人一样的陪伴和照顾</p>
+      <span item-end >￥399-￥2399</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/保胎针.png">
+      </ion-thumbnail>
+      <h2>保胎针</h2>
+      <p>上门注射黄体酮和排卵针</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/留置针.png">
+      </ion-thumbnail>
+      <h2>留置针输液</h2>
+      <p>适用于输液疗程长，血管穿刺困难者</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/静脉采血.png">
+      </ion-thumbnail>
+      <h2>静脉采血</h2>
+      <p>用于常规或特殊监测，辅助诊断疾病等</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/普通换药.png">
+      </ion-thumbnail>
+      <h2>普通换药</h2>
+      <p>伤口清洁消毒，换敷料</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/PICC换药.png">
+      </ion-thumbnail>
+      <h2>PICC换药</h2>
+      <p>长期留置PICC管的换药和护理</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/导尿.png">
+      </ion-thumbnail>
+      <h2>导尿</h2>
+      <p>插尿管，尿管护理，更换尿管</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/留置胃管.png">
+      </ion-thumbnail>
+      <h2>留置胃管</h2>
+      <p>鼻腔输入营养和药物，更换胃管</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/吸痰.png">
+      </ion-thumbnail>
+      <h2>吸痰</h2>
+      <p>将呼吸道的分泌物吸出，以保持呼吸通畅</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/压疮护理.png">
+      </ion-thumbnail>
+      <h2>压疮护理</h2>
+      <p>对压疮处给予换药，促进压疮愈合</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/造口护理.png">
+      </ion-thumbnail>
+      <h2>造口护理</h2>
+      <p>通过人造开口，帮助患者排除粪便或尿液</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/灌肠护理.png">
+      </ion-thumbnail>
+      <h2>灌肠护理</h2>
+      <p>经肛肠关注液体，通便排气</p>
+      <span item-end >￥99</span>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/外科拆线.png">
+      </ion-thumbnail>
+      <h2>外科拆线</h2>
+      <p>外科手术拆线换药</p>
+      <span item-end >￥99</span>
+    </ion-item>      
+  </ion-list> -->
+  <show-map #showMap (onLoad) ="loadMap(map)" *ngIf="isShowMap" (hideMap)="hideMapPanel()"></show-map>
+
+  <ion-card style="margin-top: 0px;margin-left:0px;margin-right:0px;width: 100%;">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3 (click)="goNurseServiceList()">
+          <div class="icon_up"><img src="assets/icon/home_jmcx.png"  ></div>
+           
+            <div class="icon_down" >护士上门</div>
+          </ion-col>
+          <ion-col col-3 (click)="goCompany()">
+            <img src="assets/icon/home_pz.png" class="icon_up">
+            <div class="icon_down" >陪诊</div>
+          </ion-col>
+          <ion-col col-3 >
+            <img src="assets/icon/home_hy.png" class="icon_up">
+            <div class="icon_down" >护工服务</div>
+          </ion-col>
+          <ion-col col-3 >
+            <img src="assets/icon/home_lzzsy.png" class="icon_up">
+            <div class="icon_down" >定制服务</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-3 (click)="goNurseserviceDetail()">
+          <div class="icon_up"><img src="assets/icon/home_btz.png"  ></div>
+           
+            <div class="icon_down" >保胎针</div>
+          </ion-col>
+          <ion-col col-3 (click)="goNurseserviceDetail()">
+            <img src="assets/icon/home_lzzsy.png" class="icon_up">
+            <div class="icon_down" >留置针输液</div>
+          </ion-col>
+          <ion-col col-3 (click)="goNurseserviceDetail()">
+            <img src="assets/icon/home_jmcx.png" class="icon_up">
+            <div class="icon_down" >静脉采血</div>
+          </ion-col>
+          <ion-col col-3 (click)="goNurseserviceDetail()">
+            <img src="assets/icon/home_hy.png" class="icon_up">
+            <div class="icon_down" >普通换药</div>
+          </ion-col>
+        </ion-row>        
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="alarm" color="primary"></ion-icon>
+      护士上门
+        <p  style="float: right;" (click)="goNurseServiceList()">更多></p>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4 (click)="goNurseserviceDetail()" >
+            <div ><img src="assets/icon/儿童陪诊.png"  ></div>
+
+            <div class="icon_down" >打针</div>
+            <div class="icon_down" class="price" style="text-align: center;">￥200元/次</div>
+          </ion-col>
+          <ion-col col-4 (click)="goNurseserviceDetail()" >
+            <img src="assets/icon/儿童陪诊.png" >
+            <div class="icon_down" >普通换药</div>
+            <div class="icon_down" class="price" style="text-align: center;">￥200元/次</div>
+          </ion-col>
+          <ion-col col-4 (click)="goNurseserviceDetail()" >
+            <img src="assets/icon/儿童陪诊.png" >
+            <div class="icon_down" >静脉采血</div>
+            <div class="icon_down" class="price" style="text-align: center;">￥200元/次</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="alarm" color="primary"></ion-icon>
+        陪诊
+        <p  style="float: right;" (click)="goCompany()">更多></p>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-4 (click)="goCompanyDetail()">
+              <div ><img src="assets/icon/儿童陪诊.png"  ></div>
+
+              <div class="icon_down" >基础陪诊套餐</div>
+              <div class="icon_down" class="price" style="text-align: center;">￥79元/小时</div>
+            </ion-col>
+            <ion-col col-4 >
+              <img src="assets/icon/儿童陪诊.png" >
+              <div class="icon_down" >儿童陪诊套餐</div>
+              <div class="icon_down" class="price" style="text-align: center;">￥80元/小时</div>
+            </ion-col>
+            <ion-col col-4 >
+              <img src="assets/icon/儿童陪诊.png" >
+              <div class="icon_down" >老人陪诊套餐</div>
+              <div class="icon_down" class="price" style="text-align: center;">￥90元/小时</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>  
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="alarm" color="primary"></ion-icon>
+      附近护士
+        <p  style="float: right;" (click)="goNurse()">更多></p>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3 (click)="goNurseDetail()" >
+          <div class="icon_up"><img src="assets/icon/72.png"  ></div>
+          
+            <div class="icon_down" >小王</div>
+          </ion-col>
+          <ion-col col-3 (click)="goNurseDetail()" >
+          <div class="icon_up"><img src="assets/icon/72.png"  ></div>
+          
+            <div class="icon_down" >小张</div>
+          </ion-col>
+          <ion-col col-3 (click)="goNurseDetail()" >
+          <div class="icon_up"><img src="assets/icon/72.png"  ></div>
+          
+            <div class="icon_down" >小杜</div>
+          </ion-col>
+          <ion-col col-3 (click)="goNurseDetail()" >
+          <div class="icon_up"><img src="assets/icon/72.png"  ></div>
+          
+            <div class="icon_down" >静静</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    </ion-card>      
+</ion-content>

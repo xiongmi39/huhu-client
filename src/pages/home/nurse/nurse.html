@@ -1,0 +1,61 @@
+<!--
+  Generated template for the Nurse page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>附近的护士</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<!-- <nurse-list-component></nurse-list-component>
+<nurse-list-component></nurse-list-component> -->
+<ion-card (click)="goNurseDetail()">
+	<ion-list>
+		<ion-item >
+			<ion-thumbnail item-start>
+				<img src="assets/icon/2017-05-13 212002.jpg">
+				<p style="text-align: center;">静静</p>
+			</ion-thumbnail>
+			<h2>输液</h2><p style="display: inline;">距离您2km</p><span item-end class="price">200元></span>
+			
+			<p><ion-icon name="create" item-left color="primary"></ion-icon>区域： 陕西 西安 雁塔区</p>
+			<p><ion-icon name="clock" item-left color="primary"></ion-icon>时间： 周一至周日 06:00-22:00</p>
+		</ion-item>
+	</ion-list>
+</ion-card>
+<ion-card>
+	<ion-list>
+		<ion-item >
+			<ion-thumbnail item-start>
+				<img src="assets/icon/7aec54e736d12f2ef6ada90f4ec2d56285356830.jpg">
+				<p style="text-align: center;">小王</p>
+			</ion-thumbnail>
+			<h2>美白针</h2><p style="display: inline;">距离您2km</p><span item-end class="price">199元></span>
+			
+			<p><ion-icon name="create" item-left color="primary"></ion-icon>区域： 陕西 西安 雁塔区</p>
+			<p><ion-icon name="clock" item-left color="primary"></ion-icon>时间： 周一至周日 06:00-22:00</p>
+		</ion-item>
+	</ion-list>
+</ion-card>
+<ion-card>
+	<ion-list>
+		<ion-item >
+			<ion-thumbnail item-start>
+				<img src="assets/icon/7aec54e736d12f2ef6ada90f4ec2d56285356830.jpg">
+				<p style="text-align: center;">小杜</p>
+			</ion-thumbnail>
+			<h2>褥疮护理</h2><p style="display: inline;">距离您2km</p><span item-end class="price">180元></span>
+			
+			<p><ion-icon name="create" item-left color="primary"></ion-icon>区域： 陕西 西安 雁塔区</p>
+			<p><ion-icon name="clock" item-left color="primary"></ion-icon>时间： 周一至周日 06:00-22:00</p>
+		</ion-item>
+	</ion-list>
+</ion-card>
+</ion-content>

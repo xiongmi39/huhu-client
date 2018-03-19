@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      发现
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-slides pager autoplay=1 loop="true" speed=2000>
+
+    <ion-slide>
+      <img src="assets/icon/banner.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/icon/banner.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/icon/banner.png">
+    </ion-slide>
+
+  </ion-slides>
+  <ion-list class="card-background-page">
+    <ion-card (click)="goArticleDetail()">
+      <img src="assets/icon/4934632b0bad0e30903c3897b6bddcf6.jpg"/>
+      <div class="card-title">他骨折后做了这些事，竟然...</div>
+      <!-- <div class="card-subtitle">骨折后应该如何护理</div> -->
+    </ion-card> 
+    <ion-card (click)="goArticleDetail()">
+      <img src="assets/icon/u=2059901119,3519034039&fm=72.jpg"/>
+      <div class="card-title">美女沉迷健身，竟变成了这样，只因为...</div>
+      <!-- <div class="card-subtitle">骨折后应该如何护理</div> -->
+    </ion-card> 
+
+  </ion-list>
+    <ion-card>
+    <ion-card-header>
+      <ion-icon name="call" color="primary"></ion-icon>
+      权威咨询
+        <p  style="float: right;" >更多></p>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3 (click)="goNurseDetail()" >
+          <div class="icon_up"><img src="assets/icon/72.png"  ></div>
+          
+            <div class="icon_down" >小王</div>
+            <p class="icon_down" >西京医院</p>
+          </ion-col>
+          <ion-col col-3 (click)="goNurseDetail()" >
+          <div class="icon_up"><img src="assets/icon/72.png"  ></div>
+          
+            <div class="icon_down" >小张</div>
+            <p class="icon_down" >交大一附院</p>
+          </ion-col>
+          <ion-col col-3 (click)="goNurseDetail()" >
+          <div class="icon_up"><img src="assets/icon/72.png"  ></div>
+          
+            <div class="icon_down" >小杜</div>
+            <p class="icon_down" >中心医院</p>
+          </ion-col>
+          <ion-col col-3 (click)="goNurseDetail()" >
+          <div class="icon_up"><img src="assets/icon/72.png"  ></div>
+          
+            <div class="icon_down" >静静</div>
+            <p class="icon_down" >高新医院</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    </ion-card> 
+</ion-content>
